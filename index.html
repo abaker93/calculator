@@ -3,31 +3,50 @@
 <head>
 	<title>Calculator</title>
 	<meta charset="UTF-8" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link href="reset.css" rel="stylesheet" />
 	<link href="styles.css" rel="stylesheet" />
 </head>
 <body>
 	<div id="calculator">
+		<header>
+			<div id="title">
+				<img src="icon.png" />
+				Calculator
+				<ul>
+					<li>_</li>
+					<li>&EmptySmallSquare;</li>
+					<li>&Cross;</li>
+				</ul>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><span>E</span>dit</li>
+					<li><span>V</span>iew</li>
+					<li><span>H</span>elp</li>
+				</ul>
+				<hr />
+			</div>
+		</header>
 		<div id="display" class="input">
 			<p>0</p>
 		</div>
-		<button id="clear" class="btn-calc clear" value="clear">C</button>
-		<button id="divide" class="btn-calc operator" value="/">&div;</button>
-		<button id="multiply" class="btn-calc operator" value="*">&Cross;</button>
-		<button id="subtract" class="btn-calc operator" value="-">&minus;</button>
-		<button id="seven" class="btn-calc operand" value="7">7</button>
-		<button id="eight" class="btn-calc operand" value="8">8</button>
-		<button id="nine" class="btn-calc operand" value="9">9</button>
-		<button id="add" class="btn-calc operator" value="+">&plus;</button>
-		<button id="four" class="btn-calc operand" value="4">4</button>
-		<button id="five" class="btn-calc operand" value="5">5</button>
-		<button id="six" class="btn-calc operand" value="6">6</button>
-		<button id="one" class="btn-calc operand" value="1">1</button>
-		<button id="two" class="btn-calc operand" value="2">2</button>
-		<button id="three" class="btn-calc operand" value="3">3</button>
-		<button id="equals" class="btn-calc equals" value="=">&equals;</button>
-		<button id="zero" class="btn-calc operand" value="0">0</button>
-		<button id="decimal" class="btn-calc" value="." disabled>.</button>
+		<button class="btn-calc btn-clear" value="clear">C</button>
+		<button class="btn-calc btn-operator" value="/">&div;</button>
+		<button class="btn-calc btn-operator" value="*">&Cross;</button>
+		<button class="btn-calc btn-operator" value="-">&minus;</button>
+		<button class="btn-calc btn-number" value="7">7</button>
+		<button class="btn-calc btn-number" value="8">8</button>
+		<button class="btn-calc btn-number" value="9">9</button>
+		<button class="btn-calc btn-operator" value="+">&plus;</button>
+		<button class="btn-calc btn-number" value="4">4</button>
+		<button class="btn-calc btn-number" value="5">5</button>
+		<button class="btn-calc btn-number" value="6">6</button>
+		<button class="btn-calc btn-number" value="1">1</button>
+		<button class="btn-calc btn-number" value="2">2</button>
+		<button class="btn-calc btn-number" value="3">3</button>
+		<button class="btn-calc btn-equals" value="=">&equals;</button>
+		<button class="btn-calc btn-number" value="0">0</button>
 	</div>
 </body>
 <script src="main.js"></script>

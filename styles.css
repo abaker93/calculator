@@ -1,15 +1,100 @@
-#calculator {
-    width: 100px;
-    height: 300px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+body {
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+
+	background-color: #02807F;
+	font-family: 'Roboto', sans-serif;;
+	font-size: 30px;
 }
 
-#display { grid-area: 1 / 1 / 2 / 5; }
+#calculator {
+	width: 500px;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-template-rows: repeat(2, auto), repeat(5, minmax(0, 1fr));
+	padding: 1px;
 
-#add { grid-area: 3 / 4 / 5 / 5; }
+	background-color: #C0C0C0;
+	border: 4px outset #E1E1E1;
+	border-right-color: #555555;
+	border-bottom-color: #AAAAAA;
+}
 
-#equals { grid-area: 5 / 4 / 7 / 5; }
+header {
+	grid-area: 1 / 1 / 2 / 5;
+}
 
-#zero { grid-column: 1 / 3; }
+#title {
+	padding: 5px;
+	background-color: #000187;
+	color: #FFFFFF;
+	font-size: 20px;
+
+}
+
+#title img {
+	height: 20px;
+	position: relative;
+	top: 3px;
+}
+
+#title ul { float: right; }
+
+#title ul li {
+	display: inline-block;
+	background: #C0C0C0;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	color: #000;
+	border: 2px outset #E1E1E1;
+	border-right-color: #555555;
+	border-bottom-color: #AAAAAA;
+}
+
+#menu ul li {
+	display: inline-block;
+	font-size: 20px;
+}
+
+#display {
+	grid-area: 2 / 1 / 3 / 5;
+	text-align: right;
+	align-self: center;
+	margin: 5px;
+	padding: 3px 10px;
+
+	background-color: #FFFFFF;
+	border: 4px inset #E1E1E1;
+	border-top-color: #AAAAAA;
+	border-left-color: #555555;
+
+	color: #000000;
+}
+
+.btn-calc {
+	margin: 5px;
+
+	background: #C0C0C0;
+	border: 4px outset #E1E1E1;
+	border-right-color: #555555;
+	border-bottom-color: #AAAAAA;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color: #0000ff;
+}
+
+.btn-calc[value='+'] { grid-area: 4 / 4 / 6 / 5; }
+
+.btn-calc[value='='] { grid-area: 6 / 4 / 8 / 5; }
+
+.btn-calc[value='0'] { grid-column: 1 / 4; }
+
+.btn-clear { color: #800000; }
+
+.btn-operator, .btn-equals { color: #ff0000; }
