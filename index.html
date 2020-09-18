@@ -8,28 +8,26 @@
 </head>
 <body>
 	<div id="calculator">
-		<div id="screen">
-			<div id="history">1234</div>
-			<div id="display">1234</div>
+		<div id="display" class="input">
+			<p>0</p>
 		</div>
-		<button class="btn-calc btn-num" value="7">7</button>
-		<button class="btn-calc btn-num" value="8">8</button>
-		<button class="btn-calc btn-num" value="9">9</button>
-		<button class="btn-calc" value="/">&div;</button>
-		<button class="btn-calc btn-num" value="4">4</button>
-		<button class="btn-calc btn-num" value="5">5</button>
-		<button class="btn-calc btn-num" value="6">6</button>
-		<button class="btn-calc" value="*">&Cross;</button>
-		<button class="btn-calc btn-num" value="1">1</button>
-		<button class="btn-calc btn-num" value="2">2</button>
-		<button class="btn-calc btn-num" value="3">3</button>
-		<button class="btn-calc" value="-">&minus;</button>
-		<button class="btn-calc" value="back">&larr;</button>
-		<button class="btn-calc btn-num" value="0">0</button>
-		<button class="btn-calc" value=".">.</button>
-		<button class="btn-calc" value="+">&plus;</button>
-		<button id="clear" class="btn-calc" value="clear">Clear</button>
-		<button id="equal" class="btn-calc" value="=">&equals;</button>
+		<button id="clear" class="btn-calc clear" value="clear">C</button>
+		<button id="divide" class="btn-calc operator" value="/">&div;</button>
+		<button id="multiply" class="btn-calc operator" value="*">&Cross;</button>
+		<button id="subtract" class="btn-calc operator" value="-">&minus;</button>
+		<button id="seven" class="btn-calc operand" value="7">7</button>
+		<button id="eight" class="btn-calc operand" value="8">8</button>
+		<button id="nine" class="btn-calc operand" value="9">9</button>
+		<button id="add" class="btn-calc operator" value="+">&plus;</button>
+		<button id="four" class="btn-calc operand" value="4">4</button>
+		<button id="five" class="btn-calc operand" value="5">5</button>
+		<button id="six" class="btn-calc operand" value="6">6</button>
+		<button id="one" class="btn-calc operand" value="1">1</button>
+		<button id="two" class="btn-calc operand" value="2">2</button>
+		<button id="three" class="btn-calc operand" value="3">3</button>
+		<button id="equals" class="btn-calc equals" value="=">&equals;</button>
+		<button id="zero" class="btn-calc operand" value="0">0</button>
+		<button id="decimal" class="btn-calc" value="." disabled>.</button>
 	</div>
 </body>
 <script src="main.js"></script>
