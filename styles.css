@@ -8,6 +8,6 @@
 
 #screen { grid-area: 1 / 1 / 2 / 5; }
 
-#btn-clear { grid-column: 1 / 3; }
+#clear { grid-column: 1 / 3; }
 
-#btn-equal { grid-column: 3 / 5; }
+#equal { grid-column: 3 / 5; }
