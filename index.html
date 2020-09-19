@@ -3,11 +3,14 @@
 <head>
 	<title>Calculator</title>
 	<meta charset="UTF-8" />
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 	<link href="reset.css" rel="stylesheet" />
 	<link href="styles.css" rel="stylesheet" />
 </head>
 <body>
+	<header>
+		<h1>Windows 98 Calculator</h1>
+	</header>
 	<div id="calculator">
 		<header>
 			<div id="title">
@@ -31,23 +34,26 @@
 		<div id="display" class="input">
 			<p>0</p>
 		</div>
-		<button class="btn-calc btn-clear" value="clear">C</button>
-		<button class="btn-calc btn-operator" value="/">&div;</button>
-		<button class="btn-calc btn-operator" value="*">&Cross;</button>
-		<button class="btn-calc btn-operator" value="-">&minus;</button>
-		<button class="btn-calc btn-number" value="7">7</button>
-		<button class="btn-calc btn-number" value="8">8</button>
-		<button class="btn-calc btn-number" value="9">9</button>
-		<button class="btn-calc btn-operator" value="+">&plus;</button>
-		<button class="btn-calc btn-number" value="4">4</button>
-		<button class="btn-calc btn-number" value="5">5</button>
-		<button class="btn-calc btn-number" value="6">6</button>
-		<button class="btn-calc btn-number" value="1">1</button>
-		<button class="btn-calc btn-number" value="2">2</button>
-		<button class="btn-calc btn-number" value="3">3</button>
-		<button class="btn-calc btn-equals" value="=">&equals;</button>
-		<button class="btn-calc btn-number" value="0">0</button>
+		<div id="keypad">
+			<button class="btn-calc btn-number" value="7">7</button>
+			<button class="btn-calc btn-number" value="8">8</button>
+			<button class="btn-calc btn-number" value="9">9</button>
+			<button class="btn-calc btn-number" value="4">4</button>
+			<button class="btn-calc btn-number" value="5">5</button>
+			<button class="btn-calc btn-number" value="6">6</button>
+			<button class="btn-calc btn-number" value="1">1</button>
+			<button class="btn-calc btn-number" value="2">2</button>
+			<button class="btn-calc btn-number" value="3">3</button>
+			<button class="btn-calc btn-number" value="0">0</button>
+			<button class="btn-calc btn-operator" value="+">&plus;</button>
+			<button class="btn-calc btn-operator" value="/">/</button>
+			<button class="btn-calc btn-operator" value="*">*</button>
+			<button class="btn-calc btn-operator" value="-">-</button>
+			<button class="btn-calc btn-equals" value="=">&equals;</button>
+			<button class="btn-calc btn-clear" value="clear">C</button>
+		</div>
 	</div>
+	<footer><a href="https://annabaker.design/" target="_blank">Anna Baker Design</a></footer>
 </body>
 <script src="main.js"></script>
 </html>
